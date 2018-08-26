@@ -17,8 +17,8 @@ $collectionNamesToSync = array_slice($argv, 6);
 
 $ig = new \InstagramAPI\Instagram($debug, $truncatedDebug);
 // The directory where all photos are stored (to avoid redownloading)
-$storageDir = $collectionsDir.DIRECTORY_SEPARATOR.".ORIGINAL_MEDIA";
-$jsonDir = $collectionsDir.DIRECTORY_SEPARATOR.".JSON";
+$storageDir = $collectionsDir.DIRECTORY_SEPARATOR."ORIGINAL_MEDIA";
+$jsonDir = $collectionsDir.DIRECTORY_SEPARATOR."JSON";
 
 function debug($msg){
     fwrite(STDERR, $msg."\n");
