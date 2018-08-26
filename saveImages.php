@@ -30,11 +30,12 @@ debug("Logging in as $username...");
 // https://medium.com/stirtingale/how-to-convert-an-instagram-id-to-a-url-in-php-cbe77ed7aa00
 // Also at
 // https://gist.github.com/stirtingale/87e44b865343061edc9b09c14571fceb#file-instagram_id_to_url-php
-// based on ggwarpig stackoverflow anwser to 
+// based on ggwarpig stackoverflow anwser to
 // "Where do I find the Instagram media ID of a image"
 // @ https://stackoverflow.com/a/37246231
 function instagram_id_to_url($instagram_id){
     $url_prefix = "https://www.instagram.com/p/";
+    $url_suffix = '';
     if(!empty(strpos($instagram_id, '_'))){
         $parts = explode('_', $instagram_id);
         $instagram_id = $parts[0];
